@@ -1,0 +1,370 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+
+.Main-Container{
+  /*border: dashed 1px black;*/
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+.Title-Container{
+  /*border: dashed 1px red;*/
+  width: 100%;
+  padding: 1%;
+  margin: auto;
+  color: orange;
+  font-family: Fixation;
+  font-size: 3vw;
+  text-align: center;
+  /*Speedeasy*/
+  /*Fixation*/
+  box-sizing: border-box;
+}
+
+.Title-Container-Screen, .Title-Container-Share{
+  text-align: center;
+  width: 15%;
+  /*border: solid 1px yellow;*/
+  display: inline-block;
+}
+
+.title-img{
+max-width: 3.2vw;
+max-height: 3.2vh;
+}
+
+.Title-Container-Img{
+  /*border: solid 1px purple;*/
+  text-align: center;
+  width:2%;
+  height: 2vh;
+  display: inline-block;
+  opacity: 0;
+  transition: width 1s linear, opacity 0.2s 0s linear;
+}
+
+
+.Title-Container-Img:hover{
+  width: 8%;
+  opacity: 1;
+  transition: width 1s linear, opacity 1s 1s linear;
+}
+
+.Title-Container-Screen{
+  text-align: right;
+}
+
+.Title-Container-Share{
+  text-align:left;
+}
+
+.Video-Container{
+  /*border: dashed 1px blue;*/
+  width: 100%;
+  /*background-color: #282828;*/
+  height: 500px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom: none;
+  box-shadow:
+    0 0 0 5px hsl(0, 0%, 50%);
+}
+
+.Video1-Container{
+  border: solid 3px white;
+  align: left;
+  width: 50%;
+  height: 500px;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, black 50%, #282828 50%);
+  display: inline-block;
+  border-top-left-radius: 10px;
+  /*background-color: #282828;*/
+  background-position: 0 0%;
+  -webkit-animation: V1-container 7s;
+  -moz-animation: V1-container 7s;
+  -ms-animation: V1-container 7s;
+  -o-animation: V1-container 7s;
+  animation: V1-container 7s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes V1-container{
+  from {background-position: 0 0%;}
+  to {background-position: 0 100%;}
+}
+
+.Video2-Container{
+  border: solid 3px white;
+  align: right;
+  width: 50%;
+  height: 500px;
+  display: inline-block;
+  border-top-right-radius:10px;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, black 50%, #282828 50%);
+  background-position: 0 0%;
+  -webkit-animation: V1-container 7s;
+  -moz-animation: V1-container 7s;
+  -ms-animation: V1-container 7s;
+  -o-animation: V1-container 7s;
+  animation: V1-container 7s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.Video1, .Video2{
+  /*border: dashed 1px orange;*/
+  width:100%;
+  height: 460px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.Video1-Message{
+  /*border: solid 1px green;*/
+  width: 100%;
+  margin-left: 1.7vw;
+  text-align: center;
+  font-size: 2.2vw;
+  opacity: 0;
+  -webkit-animation: Video1-Message-Anim 1s;
+  -moz-animation: Video1-Message-Anim 1s;
+  -ms-animation: Video1-Message-Anim 1s;
+  -o-animation: Video1-Message-Anim 1s;
+  animation: Video1-Message-Anim 1s;
+
+  -webkit-animation-delay: 2.3s;
+  -moz-animation-delay: 2.3s;
+  -ms-animation-delay: 2.3s;
+  -o-animation-delay: 2.3s;
+  animation-delay: 2.3s;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.Video2-Message{
+  /*border: solid 1px green;*/
+  width: 100%;
+  margin-left: 3.0vw;
+  text-align: center;
+  font-size: 2.2vw;
+  opacity: 0;
+  -webkit-animation: Video1-Message-Anim 1s;
+  -moz-animation: Video1-Message-Anim 1s;
+  -ms-animation: Video1-Message-Anim 1s;
+  -o-animation: Video1-Message-Anim 1s;
+  animation: Video1-Message-Anim 1s;
+
+  -webkit-animation-delay: 2.3s;
+  -moz-animation-delay: 2.3s;
+  -ms-animation-delay: 2.3s;
+  -o-animation-delay: 2.3s;
+  animation-delay: 2.3s;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Video1-Message-Anim{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.Video2{
+  padding-top:0;
+}
+
+.Video1-btns, .Video2-btns{
+  /*border: dashed 1px yellow;*/
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.Video1-btn1, .Video1-btn2, .Video2-btn1, .Video2-btn2{
+  /*border: dashed 1px red;*/
+  width: 50%;
+  display:inline-block;
+}
+
+@media screen and (max-width:640px) and (min-width: 50px){
+
+  .Video1-btns, .Video2-btns{
+    width: 100%;
+    text-align: center;
+    margin-top:-34px;
+  }
+
+  .Video1-btn1, .Video1-btn2, .Video2-btn1, .Video2-btn2{
+    width: 100%;
+  }
+
+}
+
+/*.Stream-Image{
+  padding-top: 20px;
+}*/
+
+.screen-cap-vid{
+  width:34vw;
+  height:53vh;
+  margin-left: 3vw;
+}
+
+.strm-img{
+  width:32vw;
+  height:51vh;
+  margin-left: 4vw;
+}
+
+@media screen and (max-width:1130px) and (min-width: 990px){
+
+  .strm-img{
+    width:32vw;
+    height:45vh;
+    margin-left: 4vw;
+  }
+
+
+}
+
+@media screen and (max-width:989px) and (min-width: 850px){
+
+  .strm-img{
+    width:32vw;
+    height:40vh;
+    margin-left: 4vw;
+  }
+
+}
+
+@media screen and (max-width:849px) and (min-width: 700px){
+
+  .strm-img{
+    width:32vw;
+    height:35vh;
+    margin-left: 4vw;
+  }
+
+}
+
+@media screen and (max-width:699px) and (min-width: 550px){
+
+  .strm-img{
+    width:32vw;
+    height:30vh;
+    margin-left: 4vw;
+  }
+
+}
+
+@media screen and (max-width:549px) and (min-width: 400px){
+
+  .strm-img{
+    width:32vw;
+    height:22vh;
+    margin-left: 4vw;
+  }
+
+}
+
+@media screen and (max-width:399px) and (min-width: 300px){
+
+  .strm-img{
+    width:32vw;
+    height:17vh;
+    margin-left: 4vw;
+  }
+
+}
+
+@media screen and (max-width:299px) and (min-width: 50px){
+
+  .strm-img{
+    width:32vw;
+    height:11vh;
+    margin-left: 4vw;
+  }
+
+}
+
+
+.Messages-Container{
+  /*border: dashed 1px green;*/
+  width:100%;
+  height: 200px;
+}
+
+.Message-Scrollbox{
+  border: solid 3px white;
+  background-color: #181818;
+  width:100%;
+  height:150px;
+  overflow-y: auto;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  box-shadow:
+    0 0 0 5px hsl(0, 0%, 50%);
+}
+.Message-Scrollbox::-webkit-scrollbar{
+  width: 12px;
+  height: 12px;
+  color: white;
+}
+
+.Message-Scrollbox::-webkit-scrollbar-track{
+  border: solid 1px orange;
+}
+
+.Message-Scrollbox::-webkit-scrollbar-thumb:hover{
+  background: orange;
+  border-radius: 0px;
+}
+
+.Message-Input-Box{
+  width: 100%;
+  margin-top: 8px;
+  height: 36px;
+  /*border: dashed 1px orange;*/
+  box-shadow:
+    0 0 0 5px hsl(0, 0%, 50%);
+}
+
+Button{
+  color: black !important;
+  width: 100% !important;
+  font-weight: 400 !important;
+  border-radius: 0px !important;
+}
+
+
+.usernm{
+  color: orange;
+  display: inline;
+}
+
+.mssg{
+  padding-left: 8px;
+}
